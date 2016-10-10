@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<%= form_for :pic, method: :post, url: '/pics', multipart: true do |f| %>
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit("Insta", class: "btn btn-default center-block") %>
+    <% end %>
+  </div>
